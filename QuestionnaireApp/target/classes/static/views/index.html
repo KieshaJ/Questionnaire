@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Questionnaire</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		
+		<script src="../js/lib/angular.js"></script>
+		<script src="../js/app/app.js"></script>
+		<script src="../js/app/service/FormService.js"></script>
+		<script src="../js/app/controller/FormController.js"></script>
+	</head>
+	
+	<body ng-app="app">
+		<div ng-controller="FormController">
+			<form class="form">
+				<label>{{questions[0].question}}</label><br/>
+				<input type="radio" name="answer1" value="{{questions[0].answer1}}" ng-model="answer1"> {{questions[0].answer1}}<br/>
+				<input type="radio" name="answer1" value="{{questions[0].answer2}}" ng-model="answer1"> {{questions[0].answer2}}<br/>
+				<input type="radio" name="answer1" value="{{questions[0].answer3}}" ng-model="answer1"> {{questions[0].answer3}}<br/>
+				
+				<label>{{questions[1].question}}</label><br/>
+				<input type="radio" name="answer2" value="{{questions[1].answer1}}" ng-model="answer2"> {{questions[1].answer1}}<br/>
+				<input type="radio" name="answer2" value="{{questions[1].answer2}}" ng-model="answer2"> {{questions[1].answer2}}<br/>
+				<input type="radio" name="answer2" value="{{questions[1].answer3}}" ng-model="answer2"> {{questions[1].answer3}}<br/>
+				<input type="radio" name="answer2" value="{{questions[1].answer4}}" ng-model="answer2"> {{questions[1].answer4}}<br/>
+				
+				<label>{{questions[2].question}}</label><br/>
+				<input type="radio" name="answer3" value="{{questions[2].answer1}}" ng-model="answer3"> {{questions[2].answer1}}<br/>
+				<input type="radio" name="answer3" value="{{questions[2].answer2}}" ng-model="answer3"> {{questions[2].answer2}}<br/>
+				<input type="radio" name="answer3" value="{{questions[2].answer3}}" ng-model="answer3"> {{questions[2].answer3}}<br/>
+				<hr>
+				<input type="submit" value="Pateikti" ng-click="submitForm()" id="submit">
+			</form>
+		</div>
+	</body>
+</html>

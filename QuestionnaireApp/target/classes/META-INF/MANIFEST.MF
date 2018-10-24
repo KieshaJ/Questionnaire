@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: QuestionnaireApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Kestutis
+Implementation-Vendor-Id: com.kj.questionaire
+Build-Jdk: 1.8.0_171
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/QuestionnaireApp
+Created-By: Maven Integration for Eclipse
+
